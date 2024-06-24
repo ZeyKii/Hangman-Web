@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=”UTF-8” />
+		<link href="/static/assets/css/main_page.css" rel="stylesheet">
+		<link href="/static/assets/css/button.css" rel="stylesheet">
+		<title>Welcome</title>
+		<style>
+			input[type="submit"]{border:none; background:white; color:black}
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="\static\assets\images\Start_Menu_Hangman-min.jpg" alt="" class="siteBackground">
+		</header>
+		<div class="retry">
+			<form method="post" action="/">
+				<br><br>
+				<div class="button-label">
+					<input type="radio" name="difficulty" id="easy-button" class="hidden radio-label" value="Easy" checked/>
+					<label for="easy-button" class="button-label">Easy</label>
+					<input type="radio" name="difficulty" id="medium-button" class="hidden radio-label" value="Medium")/>
+					<label for="medium-button" class="button-label">Medium</label>
+					<input type="radio" name="difficulty" id="hard-button" class="hidden radio-label" value="Hard")/>
+					<label for="hard-button" class="button-label">Hard</label>
+				</div>
+				<br>
+				<button class="button-play" role="button">Play</button>
+			</form>
+		</div>
+		<div>
+		<img src="./assets/images/LogoHangMan.svg" alt="" class="logo_hangman">
+		</div>
+	</body>
+</html>

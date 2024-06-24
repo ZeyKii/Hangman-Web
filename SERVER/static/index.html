@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  
+  <link href="./static/assets/css/button.css" rel="stylesheet">
+  <link href="./static/assets/css/style.css" rel="stylesheet">
+  <link href="./static/assets/css/style_div.css" rel="stylesheet">
+  <head>
+    <title>Hangman</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="image"><img src="/static/assets/images/LogoHangMan.svg" width="350"; height="100"></div>
+    <div class="container">
+      <div class="left"><div class="FindWord"><strong> <br><h2>{{ .Wordtofind}}</h2></strong></div>
+      <div class="LetterUsed"><i><br><strong>Letter already used : <br><br>{{ range $letter := .LetterUsed}}
+        {{ $letter }}
+      {{ end
+       }}</strong></i> <br><br></div></div>
+      <div class="right"><div class="Hangman_Title"><h2><strong>HANGMAN</strong></h2></div>
+      <div class="Hangman"><img src="{{.Hang_img}}" alt=""></div>
+      <div class="Attempts"><h2><strong>You have {{ .Attempts}} attempts remaining</strong></h2> </div></div>
+    </div>
+</form>
+  </div>
+  <h1><div class="title"></div></h1>
+    <form action="/hangman" method="post">
+        <div class="letterprop">
+        <input id="inputBox" name="input" type="text" autofocus/>
+        </div>
+        <div class="send">
+          <button class="button-submit" role="button">Submit</button>
+        </div>
+    </form>
+    
+  <div class="retry">
+    <form action="/reset">
+      <button class="button-restart-index" role="button">Restart</button>
+    </form>
+  </div>
+  </body>
+</html>

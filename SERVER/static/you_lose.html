@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=”UTF-8” />
+		<link href="/static/assets/css/main_page.css" rel="stylesheet">
+		<link href="/static/assets/css/button.css" rel="stylesheet">
+		<link href="/static/assets/css/style_div.css" rel="stylesheet">
+		<title>Welcome</title>
+		<style>
+			input[type="submit"]{border:none; background:white; color:black}
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="\static\assets\images\You_loose_Hangman-min.jpg" alt="" class="siteBackground">
+		</header>
+		<div class="retry2">
+			<form action="/reset">
+			  <button class="button-Restart" role="button">Restart</button>
+			</form>
+		  </div>
+		  <div class="the_word_is_l">
+			  The word was : {{ .Word }}
+		  </div>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-size:cover;
+    background: linear-gradient(to bottom, black, #212121);
+    height: 100%;
+}
+
+
+body, html {
+    min-height: 100% !important;
+    height: 100%;
+    padding: 0; 
+    margin: 0;
+}
